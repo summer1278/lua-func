@@ -1,3 +1,4 @@
+--[[print recursive sequence e.g. 1,2,3,4,5,4,3,2,1,2,3....]]
 function recursive_loop(start_range,end_range,inc,h)
   counter = 0
   print_number = 1
