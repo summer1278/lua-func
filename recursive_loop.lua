@@ -1,7 +1,6 @@
 --[[print recursive sequence e.g. 1,2,3,4,5,4,3,2,1,2,3....]]
-function recursive_loop(start_range,end_range,inc,h)
+function recursive_loop(start_range,end_range,inc,print_number,h)
   counter = 0
-  print_number = 1
   for i = start_range,end_range,inc do
     --[[print("counter",counter)]]
     if(counter%2==0) then
@@ -21,5 +20,6 @@ end
 start_range = 1
 end_range = 16
 inc = 1
-h = 4
-recursive_loop(start_range,end_range,inc,h)
+start_number = 1
+end_number = 5
+recursive_loop(start_range,end_range,inc,start_number,end_number-inc)
