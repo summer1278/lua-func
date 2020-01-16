@@ -27,7 +27,7 @@ recursive_loop(start_range,end_range,inc,start_number,end_number-start_number+in
 --[[get number by n_loops]]
 function get_by_index(n_loops,start_number,end_number,inc)
   counter = 0
-  print_number = start_number-1
+  print_number = start_number-inc
   for i = 1,n_loops,inc do
     --[[print("counter",counter)]]
     if(counter%2==0) then
